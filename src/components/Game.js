@@ -16,27 +16,27 @@ const Game = () => {
 
 
     const handleClick = (i) => {
-        const board = [...board];
+        const boardCopy = [...board];
         //If user clicked on occupied square or if game is won, return
-        if (winner || board[i]) return;
+        if (winner || boardCopy[i]) return;
 
         //Put an X or an O in the clicked square
-        board[i] = xIsNext ? 'X' : 'O'; //check if X is nex otherwise set it to O
-        setBoard(board);
+        boardCopy[i] = xIsNext ? 'X' : 'O'; //check if X is next (turn) otherwise set it to O
+        setBoard(boardCopy);
         setXIsNext(!xIsNext);
     }
 
-    const jumpTo = () => {
-        
-    }
-
     const renderMoves = () => {
-        
+        return <button onClick={() => setBoard(Array(9).fill(null))}>Start Game</button>
     }
 
     return (
         <div>
-            <Board squares={board} play={handleClick}/>
+            <Board squares={board} onClick={handleClick}/>
+            <div className="winner-message">
+                <p>{winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')}</p>
+                {renderMoves()}
+            </div>
         </div>        
     )
 }

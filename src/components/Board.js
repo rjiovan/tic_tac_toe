@@ -8,11 +8,11 @@ import './Board.css';
 import Square from './Square';
 
 //Functional component
-const Board = ({ squares, play }) => { 
+const Board = ({ squares, onClick }) => { 
 
     return (
         <div className="board">
-            { squares.map((square, i) => <Square key={i} value={square} play={() => play("value")}/> )}
+            { squares.map((square, i) => <Square key={i} value={square} onClick={() => onClick(i)}/> )}
         </div>        
     )
 }
