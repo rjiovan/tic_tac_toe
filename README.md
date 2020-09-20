@@ -1,10 +1,10 @@
 # Tic Tac Toe
 
 ### Introduction
-This project uses react hooks to allow user to play tic tac toe.
+This project uses react hooks to allow a user to play tic tac toe.
 
 ### User Story
-A user I want to be able to play tic tac toe so I can play a fun / competitive game with someone.
+As user, I want to play a fun / competitive game of tic tac toe with someone.
 
 ### Pre-requisite
 1. Node v14.10.1
