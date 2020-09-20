@@ -7,7 +7,7 @@ import './Square.css';
 //Functional component
 const Square = ({value, play}) => { 
     return (
-        <button onClick={play}>
+        <button className="square" onClick={play}>
             {value}
         </button>        
     )

@@ -4,11 +4,15 @@ import React from 'react'
 //Styles
 import './Board.css';
 
+//Components
+import Square from './Square';
+
 //Functional component
-const Board = () => { 
+const Board = ({ squares, play }) => { 
+
     return (
-        <div>
-            <h3>Board</h3>
+        <div className="board">
+            { squares.map((square, i) => <Square key={i} value={square} play={() => play("value")}/> )}
         </div>        
     )
 }
