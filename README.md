@@ -1,10 +1,10 @@
 # Tic Tac Toe
 
 ### Introduction
-I have been in a Project Management position for 12 months and have not sat down to code any new projects during that time. I felt that I was becoming removed from the developer way of thinking and the process, so I decided that I will get back into coding by blogging about my projects. In hopes to give back and earn comradery with the developer community. I will start with a few refresher tutorials. For my first project, I chose to lean on Scrimba for a one-hour tutorial on creating a react app that will allow a user to fetch data about a movie. 
+This project uses react hooks to allow user to play tic tac toe.
 
 ### User Story
-A simple project to refresh on using react and building website applications. I chose to lean on Scrimba for a one-hour tutorial on creating a react app that will allow a user to fetch data about a movie.
+A user I want to be able to play tic tac toe so I can play a fun / competitive game with someone.
 
 ### Pre-requisite
 1. Node v14.10.1
@@ -14,7 +14,7 @@ A simple project to refresh on using react and building website applications. I 
 
 Clone the repo:
 ```
-git clone https://github.com/rjiovan/nocode.git
+git clone https://github.com/rjiovan/tic_tac_toe.git
 ```
 
 Install node_modules
